@@ -12,13 +12,13 @@ jobs:
       matrix:
         include:
           - name: "alpine3"
-            context: "./alpine3"
+            context: "./alpine1"
             dockerfile_path: "./alpine1/Dockerfile"
             repository: "trial451ad8.jfrog.io/dev-docker-docker/"
             image_tag: "${{ github.run_number }}"
 
           - name: "alpine4"
-            context: "./alpine4"
+            context: "./alpine2"
             dockerfile_path: "./alpine2/Dockerfile"
             repository: "trial451ad8.jfrog.io/dev-docker-docker/"
             image_tag: "${{ github.run_number }}"

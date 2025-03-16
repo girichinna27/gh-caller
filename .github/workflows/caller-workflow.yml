@@ -14,13 +14,13 @@ jobs:
           - name: "alpine3"
             context: "./alpine3"
             dockerfile_path: "./alpine1/Dockerfile"
-            repository: "trial451ad8.jfrog.io/dev-docker-docker/alpinei3"
+            repository: "trial451ad8.jfrog.io/dev-docker-docker/"
             image_tag: "${{ github.run_number }}"
 
           - name: "alpine4"
             context: "./alpine4"
             dockerfile_path: "./alpine2/Dockerfile"
-            repository: "trial451ad8.jfrog.io/dev-docker-docker/alpine4"
+            repository: "trial451ad8.jfrog.io/dev-docker-docker/"
             image_tag: "${{ github.run_number }}"
 
     uses: girichinna27/gh-worker/.github/workflows/worker-workflow.yml@main

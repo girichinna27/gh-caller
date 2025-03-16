@@ -23,7 +23,7 @@ jobs:
             repository: "trial451ad8.jfrog.io/dev-docker-docker/alpine2"
             image_tag: "alpine2-${{ github.run_id }}"
 
-    uses: girichinna27/ortseam-worker/.github/workflows/worker-workflow.yml@main
+    uses: girichinna27/gh-worker/.github/workflows/worker-workflow.yml@main
     with:
       image_name: ${{ matrix.name }}
       context: ${{ matrix.context }}

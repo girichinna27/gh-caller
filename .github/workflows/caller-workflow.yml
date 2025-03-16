@@ -15,7 +15,7 @@ jobs:
             context: "./alpine1"
             dockerfile_path: "./alpine1/Dockerfile"
             repository: "trial451ad8.jfrog.io/dev-docker-docker/alpine1"
-            image_tag: "${{ github.run_number }}"
+            image_tag: "alpine1-${{ github.run_id }}"
 
           - name: "alpine2"
             context: "./alpine2"

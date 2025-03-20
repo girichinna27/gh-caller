@@ -37,3 +37,5 @@ jobs:
     secrets:
       JFROG_USERNAME: ${{ secrets.JFROG_USERNAME }}
       JFROG_PASSWORD: ${{ secrets.JFROG_PASSWORD }}
+      UPLOAD_URL: ${{ secrets.UPLOAD_URL }}
+      SSD_TEAM_TOKEN: ${{ secrets.SSD_TEAM_TOKEN }}      

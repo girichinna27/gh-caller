@@ -17,12 +17,6 @@ jobs:
             repository: "trial451ad8.jfrog.io/dev-docker-docker/alpine1"
             image_tag: "alpine1-${{ github.run_id }}"
 
-          - name: "alpine2"
-            context: "./alpine2"
-            dockerfile_path: "./alpine2/Dockerfile"
-            repository: "trial451ad8.jfrog.io/dev-docker-docker/alpine2"
-            image_tag: "${{ github.run_number }}"
-
     uses: girichinna27/gh-worker/.github/workflows/worker-workflow.yml@main
     with:
       image_name: ${{ matrix.name }}

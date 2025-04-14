@@ -15,7 +15,7 @@ jobs:
             context: "./alpine1"
             dockerfile_path: "./alpine1/Dockerfile"
             repository: "hanu14.jfrog.io/ssd-docker"
-            image_tag: "alpine1-${{ github.run_id }}"
+            image_tag: "${{ github.run_id }}"
 
     uses: girichinna27/gh-worker/.github/workflows/worker-workflow.yml@main
     with:
@@ -23,8 +23,8 @@ jobs:
       context: ${{ matrix.context }}
       dockerfile_path: ${{ matrix.dockerfile_path }}
       image_tag: ${{ matrix.image_tag }}
-      registry: 'trial451ad8.jfrog.io'
-      org: "ortseam"
+      registry: 'hanu14.jfrog.io.jfrog.io'
+      org: "opsmx"
       application_tags: "v1.0"
       artifactory_url: ${{ matrix.repository }}
 

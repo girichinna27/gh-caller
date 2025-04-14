@@ -16,6 +16,11 @@ jobs:
             dockerfile_path: "./alpine1/Dockerfile"
             repository: "hanu14.jfrog.io/ssd-docker"
             image_tag: "${{ github.run_id }}"
+          - name: "alpine2"
+            context: "./alpine2"
+            dockerfile_path: "./alpine2/Dockerfile"
+            repository: "hanu14.jfrog.io/ssd-docker"
+            image_tag: "${{ github.run_id }}"
 
     uses: girichinna27/gh-worker/.github/workflows/worker-workflow.yml@main
     with:
